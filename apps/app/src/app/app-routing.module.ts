@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { EmployeeComponent } from './components/employee/employee.component';
-import { EmployeeComponentModule } from './components/employee/employee.component-module';
-import { EmployeeServiceModule } from './services/employee.service-module';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoriesComponentModule } from './components/categories/categories.component-module';
+import { CategoriesServiceModule } from './services/categories.service-module';
 
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'product', component: EmployeeComponent }, { path: 'employee', component: EmployeeComponent }]), EmployeeComponentModule, EmployeeServiceModule, EmployeeComponentModule, EmployeeServiceModule],
+  imports: [RouterModule.forRoot([{ path: 'product', component: CategoriesComponent }, { path: 'employee', component: CategoriesComponent }, { path: 'chip', component: CategoriesComponent }, { path: 'categories', component: CategoriesComponent }]), CategoriesComponentModule, CategoriesServiceModule, CategoriesComponentModule, CategoriesServiceModule],
   providers: [],
   declarations: [],
   exports: []
